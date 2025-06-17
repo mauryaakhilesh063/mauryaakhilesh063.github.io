@@ -333,10 +333,13 @@ img {
 }
 
 .skills__js {
-  width: 65%;
+  width: 95%;
 }
 
 .skills__ux {
+  width: 85%;
+}
+.skills__java{
   width: 85%;
 }
 
@@ -532,4 +535,7 @@ img {
   .home__img {
     width: 450px;
   }
+}
+.project__content{
+  text-align:justify;
 }

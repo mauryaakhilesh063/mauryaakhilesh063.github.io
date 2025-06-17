@@ -12,11 +12,6 @@
     />
   </head> -->
   <body>
-    <h3>Hello ${pageContext.request.userPrincipal.name},</h3>
-    <h4>Welcome to Dashboard Page!</h4>
-    <!-- <a href="<c:url value='/logout' />">Click here to logout</a> -->
-    <!--by akhilesh-->
-
     <!--===== HEADER =====-->
     <header class="l-header">
       <nav class="nav bd-grid">
@@ -116,7 +111,7 @@
           <div>
             <h2 class="about__subtitle">I'am Akhilesh</h2>
             <p class="about__text">
-              At Newgen Software Technology , we specialize in Computer Science
+              At Newgen Software Technology , Specialize in Computer Science
               & Technology. With a keen understanding of HTML, CSS, JavaScript,
               jQuery, Java. we are committed to delivering the Best to our
               clients or customer.
@@ -128,10 +123,9 @@
       <!--===== PROJECT =====-->
       <section class="project section" id="project">
         <h2 class="section-title">Project</h2>
-
-        <div class="project__container bd-grid">
+        <div style="display: flex;">
+        <div style="width: 60% ;padding:50px;">
           <div class="project__content">
-            <img src="assets/images/project1.jpg" alt="" class="project__img" />
             <h3 class="project__title">🏦 CLOS Integration Project – Newgen</h3>
             <span style="font-weight: bold;">Overview :</span>
             <br>
@@ -178,10 +172,15 @@
         the groundwork for future integrations with banking CRMs and compliance
         systems.
       </p>
-          </div>
-         
+          </div>        
         </div>
-
+        <div style="width: 40%;">
+          <br><br><br><br><br>
+          <img src="assets/images/project1.png" alt="" class="project1__img" /> 
+        </div>
+        </div>
+        
+      </section>
 
       <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
@@ -190,11 +189,7 @@
         <div class="skills__container bd-grid">
           <div>
             <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              optio id vero amet, alias architecto consectetur error eum eaque
-              sit.
-            </p>
+           <!-- <p class="skills__text"></p> -->
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx bxl-html5 skills__icon"></i>
@@ -222,7 +217,7 @@
               </div>
               <div class="skills__bar skills__js"></div>
               <div>
-                <span class="skills__percentage">65%</span>
+                <span class="skills__percentage">95%</span>
               </div>
             </div>
             <div class="skills__data">
@@ -231,6 +226,16 @@
                 <span class="skills__name">UX/UI</span>
               </div>
               <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-java skills__icon"></i>
+                <span class="skills__name">Java</span>
+              </div>
+              <div class="skills__bar skills__java"></div>
               <div>
                 <span class="skills__percentage">85%</span>
               </div>
@@ -304,6 +309,6 @@
       </div>
       <p class="footer__copy">&#169; 2025. All rigths reserved</p>
     </footer>
-    <script src="/assets/js/dashboard.js"></script>
+   <!-- <script src="/assets/js/dashboard.js"></script>-->
   </body>
 </html>
