@@ -4,13 +4,7 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="assets/css/dashboard.css" />
-
-    <!-- =====BOX ICONS===== -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head> -->
+  </head> 
   <body>
     <!--===== HEADER =====-->
     <header class="l-header">
@@ -57,7 +51,7 @@
             Senior Engineer
           </h1>
 
-          <a href="#" class="button">Contact</a>
+          <a onclick="downloadCv()" class="button">Download CV</a>
         </div>
 
         <div class="home__social">
@@ -280,18 +274,20 @@
 
         <div class="contact__container bd-grid">
           <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+            <input type="text" id="name" placeholder="Name" class="contact__input" />
+            <input type="mail" id="email" placeholder="Email" class="contact__input" />
             <textarea
               name=""
-              id=""
+              id="message"
               cols="0"
               rows="10"
               class="contact__input"
+              placeholder="Enter Your Message Here..."
             ></textarea>
             <input
               type="button"
-              value="Enviar"
+              value="Submit"
+              onclick="submitContact()"
               class="contact__button button"
             />
           </form>
@@ -301,14 +297,8 @@
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-      <p class="footer__title">Akhilesh</p>
-      <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
-      </div>
       <p class="footer__copy">&#169; 2025. All rigths reserved</p>
     </footer>
-   <!-- <script src="/assets/js/dashboard.js"></script>-->
   </body>
+  <script src="assets/js/dashboard.js"></script>
 </html>
