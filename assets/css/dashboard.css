@@ -539,3 +539,7 @@ img {
 .project__content{
   text-align:justify;
 }
+.project__content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
