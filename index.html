@@ -46,24 +46,46 @@
       <!--===== HOME =====-->
       <section class="home bd-grid" id="home">
         <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Akhilesh</span><br />
-            Senior Engineer
-          </h1>
 
-          <a onclick="downloadCv()" class="button">Download CV</a>
+          <h1 class="home__title">
+            Hi, I'm <span class="home__title-color">Akhilesh</span><br />
+            Building Scalable Digital Experiences
+          </h1>
+          <p class="home__subtitle">
+            5+ years of hands-on experience in Java, Spring Boot, frontend engineering, and fintech product development.
+          </p>
+
+          <div class="home__actions">
+            <a onclick="downloadCv()" class="button">Download CV</a>
+            <a href="#contact" class="button button--secondary">Hire Me</a>
+          </div>
+
+          <div class="home__stats">
+            <div class="home__stat">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="home__stat">
+              <strong>35%</strong>
+              <span>Performance Gains</span>
+            </div>
+            <div class="home__stat">
+              <strong>10+</strong>
+              <span>Fintech Projects</span>
+            </div>
+          </div>
         </div>
 
         <div class="home__social">
           <a
             href="https://www.linkedin.com/in/mauryaakhilesh063/"
             class="home__social-icon"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noreferrer"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-behance"></i
-          ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/mauryaakhilesh063" class="home__social-icon" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i></a>
         </div>
 
         <div class="home__img">
@@ -103,12 +125,12 @@
           </div>
 
           <div>
-            <h2 class="about__subtitle">I'am Akhilesh</h2>
+            <h2 class="about__subtitle">About Me</h2>
             <p class="about__text">
-              At Newgen Software Technology , Specialize in Computer Science
-              & Technology. With a keen understanding of HTML, CSS, JavaScript,
-              jQuery, Java. we are committed to delivering the Best to our
-              clients or customer.
+              I’m a software engineer with 5+ years of experience in building secure, scalable, and user-centered digital products for the banking and fintech domain.
+            </p>
+            <p class="about__text">
+              At Newgen Software Technology, I work across frontend and backend engineering, focusing on Java, Spring Boot, JavaScript, HTML, CSS, and modern product workflows to deliver reliable solutions for enterprise clients.
             </p>
           </div>
         </div>
@@ -117,63 +139,23 @@
       <!--===== PROJECT =====-->
       <section class="project section" id="project">
         <h2 class="section-title">Project</h2>
-        <div class="project__container bd-grid">
-          <div class="project__left">
-            <h3 class="project__title">🏦 CLOS Integration Project – Newgen</h3>
-            <h4 class="project__subtitle">Overview</h4>
-            <div class="project__button">
-              I am currently working on Newgen's Commercial Loan Origination System (CLOS), which is a fintech platform used by banks to manage the end-to-end commercial loan lifecycle. The system handles:
-              <ul>
-                <li>Lead creation</li>
-                <li>Customer onboarding (KYC, CIF creation)</li>
-                <li>Loan application processing</li>
-                <li>Credit bureau verification</li>
-                <li>Underwriting & risk assessment</li>
-                <li>Approval workflow</li>
-                <li>Sanction & documentation</li>
-                <li>Disbursement and CBS integration</li>
-              </ul>
-            </div>
-            
-            <h4 class="project__subtitle">My Role</h4>
-            <ul class="project__role-list">
-              <li>My role as a Senior Software Engineer involves designing and developing Spring Boot microservices for loan origination and credit verification workflows.</li>
-              <li>I led the integration with external credit bureau APIs for real-time verification.</li>
-              <li>I also optimized SQL queries and indexing strategies, improving response time by 35%.</li>
-              <li>Additionally, I worked on two-way integration with Core Banking Systems and handled production incidents with RCA.</li>
-            </ul>
-          </div>
 
-          <div class="project__right">
-            <div class="project__image-wrapper">
-              <img src="assets/images/project1.png" alt="CLOS Integration Project" class="project__img" />
-            </div>
-            
-            <h4 class="project__subtitle">Key Highlights</h4>
-            <ul class="project__highlights-list">
-              <li><strong>Improved turnaround time</strong> by 35% through automation of manual underwriting steps.</li>
-              <li>Integrated REST APIs for real-time credit checks and document verification.</li>
-              <li>Ensured scalability by modularizing code and optimizing DOM interactions.</li>
-            </ul>
-            
-            <h4 class="project__subtitle">Tech Stack</h4>
-            <ul class="project__tech-list">
-              <li>Front End: React, HTML/CSS, JavaScript</li>
-              <li>Backend: Java, Spring Boot</li>
-            </ul>
-            
-            <h4 class="project__subtitle">Impact</h4>
-            <p class="project__impact">The project significantly reduced loan processing time and improved user experience for both internal teams and external applicants. It also laid the groundwork for future integrations with banking CRMs and compliance systems.</p>
+        <div class="project__cards" id="projectGrid"></div>
+
+        <div class="project__detail" id="projectDetail" aria-hidden="true">
+          <div class="project__detail-card">
+            <button class="project__close" id="closeProjectDetail" aria-label="Close project details">×</button>
+            <div id="projectDetailContent"></div>
           </div>
         </div>
-      </section> 
+      </section>
       <!--===== SKILLS ===== -->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
 
         <div class="skills__container bd-grid">
           <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <h2 class="skills__subtitle">Professional Skills</h2>
            <!-- <p class="skills__text"></p> -->
             <div class="skills__data">
               <div class="skills__names">
@@ -238,22 +220,22 @@
         <h2 class="section-title">Work</h2>
 
         <div class="work__container bd-grid">
-          <a href="" class="work__img">
+          <a href="#work" class="work__img">
             <img src="assets/images/work1.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a href="#work" class="work__img">
             <img src="assets/images/work2.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a href="#work" class="work__img">
             <img src="assets/images/work3.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a href="#work" class="work__img">
             <img src="assets/images/work4.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a href="#work" class="work__img">
             <img src="assets/images/work5.jpg" alt="" />
           </a>
-          <a href="" class="work__img">
+          <a href="#work" class="work__img">
             <img src="assets/images/work6.jpg" alt="" />
           </a>
         </div>
@@ -266,7 +248,7 @@
         <div class="contact__container bd-grid">
           <form action="" class="contact__form">
             <input type="text" id="name" placeholder="Name" class="contact__input" />
-            <input type="mail" id="email" placeholder="Email" class="contact__input" />
+            <input type="email" id="email" placeholder="Email" class="contact__input" />
             <textarea
               name=""
               id="message"
